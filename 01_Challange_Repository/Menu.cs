@@ -8,7 +8,7 @@ namespace _01_Challange_Repository
 { 
     public class Menu
     {
-        public Menu(int mealNumber, string mealName, string mealDescription, List<string> ingredients, decimal price)
+        public Menu(int mealNumber, string mealName, string mealDescription, string ingredients, decimal price)
         {
             MealNumber = mealNumber;
             MealName = mealName;
@@ -19,7 +19,6 @@ namespace _01_Challange_Repository
 
         public Menu()
         {
-
         }
 
         public int MealNumber { get; set; }
@@ -28,9 +27,8 @@ namespace _01_Challange_Repository
 
         public string MealDescription { get; set; }
 
-        public List<string> Ingredients { get; set; }
+        public string Ingredients { get; set; }
 
         public decimal Price { get; set; }
-        
     }
 }

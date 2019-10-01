@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01_Challange_Console
+namespace _02_Challange_Console
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ProgramUI program = new ProgramUI();
-            program.Run();
         }
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F872F118-D2C9-432A-BFFC-207E73A38722}</ProjectGuid>
+    <ProjectGuid>{C27D7B5C-3316-417F-B037-E1C7ABEC7B33}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_01_Challange_Console</RootNamespace>
-    <AssemblyName>01_Challange_Console</AssemblyName>
+    <RootNamespace>_02_Challange_Console</RootNamespace>
+    <AssemblyName>_02_Challange_Console</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,17 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\01_Challange_Repository\01_Challange_Repository.csproj">
-      <Project>{E03A4C45-0D50-43B8-8BE8-917C9DBD16E9}</Project>
-      <Name>01_Challange_Repository</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

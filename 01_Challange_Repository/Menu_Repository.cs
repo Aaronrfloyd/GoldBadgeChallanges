@@ -8,25 +8,41 @@ namespace _01_Challange_Repository
 {
      public class Menu_Repository
      {
-        List<Menu_Repository> _menu_Repositories = new List<Menu_Repository>();
+        List<Menu> _menuList = new List<Menu>();
 
-        public void AddToList(Menu_Repository content)
+        public Menu_Repository()
         {
-            _menu_Repositories.Add(content);
         }
 
-        public List<Menu_Repository> GetMenu_Repositories()
+        public void AddToList(Menu content)
         {
-            return _menu_Repositories;
+            _menuList.Add(content);
         }
 
-        public void RemoveMenu_Repository(string mealNumber)
+        public List<Menu> GetMenuList()
         {
-            foreach(Menu_Repository item in _menu_Repositories)
+            return _menuList;
+        }
+
+        public void RemoveMenuItemByName(string mealName)
+        {
+            foreach(Menu item in _menuList)
+            {
+                if(item.MealName == mealName)
+                {
+                    _menuList.Remove(item);
+                    break;
+                }
+            }
+        }
+
+        public void RemoveMenuItemByNumber(int mealNumber)
+        {
+            foreach(Menu item in _menuList)
             {
                 if(item.MealNumber == mealNumber)
                 {
-                    _menu_Repositories.Remove(item);
+                    _menuList.Remove(item);
                     break;
                 }
             }
@@ -34,8 +50,13 @@ namespace _01_Challange_Repository
          
         public void SeedList()
         {
+            Menu item = new Menu(1, "Burger", "Delicious Burger", "Lettuce, tomato, onion", 4.99m);
+            Menu item2 = new Menu(2, "Hot Dog", "Chicago Dog", "Relish, peppers, mustard", 3.99m);
+            Menu item3 = new Menu(3, "Nachos", "Loaded Nachos", "Beans, cheese, Jalapeno", 5.99m);
 
-        }
-
+            AddToList(item);
+            AddToList(item2);
+            AddToList(item3);
+        } 
      }
 }
