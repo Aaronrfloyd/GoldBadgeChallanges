@@ -1,4 +1,5 @@
 ﻿using System;
+using _02_Challange_Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace _02_ClaimRepository_Tests
@@ -7,8 +8,11 @@ namespace _02_ClaimRepository_Tests
     public class ClaimRepository_Tests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void SeeAllClaims()
         {
+            Claim item = new claim();
+
+            
         }
     }
 }

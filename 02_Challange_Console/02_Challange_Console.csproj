@@ -7,7 +7,7 @@
     <ProjectGuid>{C27D7B5C-3316-417F-B037-E1C7ABEC7B33}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_02_Challange_Console</RootNamespace>
-    <AssemblyName>_02_Challange_Console</AssemblyName>
+    <AssemblyName>02_Challange_Console</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,10 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\02_Challange Repository\02_Challange Repository.csproj">
+      <Project>{69F59091-3C9E-45B8-95FB-91C191EC1314}</Project>
+      <Name>02_Challange Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
