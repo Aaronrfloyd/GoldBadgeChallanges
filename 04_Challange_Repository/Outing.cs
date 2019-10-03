@@ -16,8 +16,10 @@ namespace _04_Challange_Repository
             Date = date;
             CostPP = costPP;
             CostE = costE;
-            TotalCostOfOuting = (attendees * costPP);
+            CalcComboCost = costPP * attendees + costE;
         }
+
+
         public Outing()
         {
 
@@ -26,9 +28,9 @@ namespace _04_Challange_Repository
         public EventType Type { get; set; }
         public int Attendees { get; set; }
         public DateTime Date { get; set; }
-        public Double CostPP { get; set; }
+        public double CostPP { get; set; }
         public double CostE { get; set; }
-        public int MyProperty { get; set; }
-        public double MyProperty { get; set; }
+        public double CalcComboCost { get; set; }
+        
     }
 }
