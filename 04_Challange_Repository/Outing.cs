@@ -16,6 +16,7 @@ namespace _04_Challange_Repository
             Date = date;
             CostPP = costPP;
             CostE = costE;
+            TotalCostOfOuting = (attendees * costPP);
         }
         public Outing()
         {
@@ -27,6 +28,7 @@ namespace _04_Challange_Repository
         public DateTime Date { get; set; }
         public Double CostPP { get; set; }
         public double CostE { get; set; }
-
+        public int MyProperty { get; set; }
+        public double MyProperty { get; set; }
     }
 }

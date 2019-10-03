@@ -22,8 +22,9 @@ namespace _04_Challange_Console
             Console.WriteLine("Choose a menu item.\n" +
                 "1. Display a list of all outings.\n" +
                 "2. Add outing to a list.\n" +
-                "3. Combined cost for outing by type.\n" +
-                "4 ")
+                "3. Total cost for combined outings.\n" +
+                "4. Total cost for types of outings. \n" +
+                "5.  Exit.")
         }
     }
 }
